@@ -3,7 +3,16 @@
 <div id="top"></div>
 <!-- PROJECT LOGO -->
 <div align="center">
-## Frontend Repository Link
+  <a href="https://github.com/VuDej/backend-rent">
+    <img src="./app/assets/images/logo.png" alt="Logo" width="200" height="150">
+  </a>
+
+  <h1 align="center">Mayo Clinic</h1>
+
+  <p align="center">
+    A car rental website
+    <br />
+
 
 
   <a href="https://github.com/VuDej/hospital#readme"><strong>Explore the docs »</strong></a>
