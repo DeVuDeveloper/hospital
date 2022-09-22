@@ -1,0 +1,7 @@
+<%= render partial: '/errors', locals: { record: @patient } %>
+
+<h4>Welcome, <%= current_user.fullname %></h4>
+
+<%= render 'form' %>
+
+<p><i>Since the questionnaire relies on patient self-report, all responses will be verified by your insurance provider, as well as other relevant information from the patient.</i></p>
