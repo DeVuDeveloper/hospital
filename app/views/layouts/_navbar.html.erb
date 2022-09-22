@@ -11,7 +11,7 @@
                 <li><%= link_to "Profile", user_path(session[:user_id]), class: "waves-effect waves-teal btn-flat white-text" %></li>
                 <li><%= button_to "Log Out", logout_path, method: "delete", class: "waves-effect waves-teal btn-flat white-text" %></li>
 
-            <% elsif logged_in? && current_user.admin == true %>
+            <% elsif logged_in? && current_user%>
                 <li><%= link_to "Home", admin_users_path, class: "waves-effect waves-teal btn-flat white-text" %></li>
                 <li><%= link_to "Doctors", doctors_path, class: "waves-effect waves-teal btn-flat white-text" %></li>
                 <li><%= link_to "Profile", user_path(current_user.id), class: "waves-effect waves-teal btn-flat white-text" %></li>
@@ -33,7 +33,7 @@
                     <li><%= link_to "Profile", user_path(session[:user_id]), class: "waves-effect waves-teal btn-flat black-text" %></li>
                     <li><%= button_to "Log Out", logout_path, method: "delete", class: "waves-effect waves-teal btn-flat black-text" %></li>
 
-                <% elsif logged_in? && current_user.admin == true %>
+                <% elsif logged_in? && current_user %>
                     <li><%= link_to "Home", admin_users_path, class: "waves-effect waves-teal btn-flat black-text" %></li>
                     <li><%= link_to "Doctors", doctors_path, class: "waves-effect waves-teal btn-flat black-text" %></li>
                     <li><%= link_to "Profile", user_path(current_user.id), class: "waves-effect waves-teal btn-flat black-text" %></li>
