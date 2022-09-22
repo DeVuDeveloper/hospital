@@ -1,6 +1,6 @@
 # Mayo CLinic
 
-<div id="top"></div>
+<
 <!-- PROJECT LOGO -->
 <div align="center">
   <a href="https://github.com/VuDej/backend-rent">
