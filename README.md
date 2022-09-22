@@ -11,10 +11,6 @@
 
   <p align="center">
    
-    <br />
-
-
-
   <a href="https://github.com/VuDej/hospital#readme"><strong>Explore the docs »</strong></a>
     <br />
     <br />
