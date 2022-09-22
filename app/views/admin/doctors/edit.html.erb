@@ -1,0 +1,43 @@
+<h4>Edit Doctor Information</h4>
+<%= render partial: '/errors', locals: { record: @doctor } %>
+<%= form_with model: [:admin, @doctor], local: true do |f| %>
+  <div>
+    <%= f.label :gender, "Gender" %>
+    <%= f.text_field :gender %>
+  </div>
+  <div>
+    <%= f.label :specialty, "Specialty" %>
+    <%= f.text_field :specialty %>
+  </div>
+  <div>
+    <%= f.label :hospital, "Hospital" %>
+    <%= f.text_field :hospital %>
+  </div>
+  <div>
+    <%= f.label :address, "Address" %>
+    <%= f.text_field :address %>
+  </div>
+  <div>
+    <%= f.label :city, "City" %>
+    <%= f.text_field :city %>
+  </div>
+  <div>
+    <%= f.label :state, "State" %>
+    <%= f.text_field :state %>
+  </div>
+  <div>
+    <%= f.label :zipcode, "Zipcode" %>
+    <%= f.text_field :zipcode %>
+  </div>
+  <br>
+  Doctor Information was created at <%= date_and_time(@doctor.created_at) %><br>
+  Doctor Information was updated at <%= date_and_time(@doctor.updated_at) %><br>
+  <br>
+  <div>
+    <%= f.submit "Update Doctor", class: "waves-effect waves-light btn" %>
+  </div>
+<% end %>
+<br>
+<%= link_to "Back to Doctor's Profile", admin_user_path(@doctor.user), class: "waves-effect waves-light btn" %>
+<br>
+<br>
