@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   delete '/logout', to: 'sessions#destroy'
 
   # Omniauth GitHub and Google route
-  get '/auth/:provider/callback', to: 'sessions#omniauth'
+  get '/auth/:provider/', to: 'sessions#omniauth'
 
   # Only Admin can see Users Index
   resources :users, except: [:index]  
