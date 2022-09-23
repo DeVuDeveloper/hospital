@@ -72,6 +72,7 @@ group :test do
 end
 
 gem 'bcrypt', '~> 3.1.7'
+gem 'dotenv-rails'
 gem 'materialize-sass', '~> 1.0.0'
 gem 'omniauth'
 gem 'omniauth-github'
@@ -79,6 +80,3 @@ gem 'omniauth-google-oauth2'
 gem 'rubocop', '>= 1.0', '< 2.0'
 gem 'sass-rails', '>= 6'
 gem 'simple_calendar', '~> 2.0'
-
-# dotenv for Omniauth Variables
-gem 'dotenv-rails', groups: %i[development test]
