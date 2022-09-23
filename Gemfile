@@ -66,17 +66,23 @@ end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
+  gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'capybara'
+  gem 'pry'
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
 
 gem 'bcrypt', '~> 3.1.7'
 gem 'dotenv-rails'
+gem 'json'
 gem 'materialize-sass', '~> 1.0.0'
+gem 'nokogiri'
 gem 'omniauth'
 gem 'omniauth-github'
 gem 'omniauth-google-oauth2'
+gem 'open-uri'
+gem 'rest-client'
 gem 'rubocop', '>= 1.0', '< 2.0'
 gem 'sass-rails', '>= 6'
 gem 'simple_calendar', '~> 2.0'
