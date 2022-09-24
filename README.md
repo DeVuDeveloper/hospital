@@ -34,7 +34,7 @@ Admin can manage doctors and patients, send recommendation and tests. (On demand
 
 ## Live Demo
 
-(In progress)
+([Demo](https://hospital-dejan.herokuapp.com/))
 
 ## Getting Started 🏁
 
