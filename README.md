@@ -1,6 +1,4 @@
 # Mayo CLinic
-
-<
 <!-- PROJECT LOGO -->
 <div align="center">
   <a href="https://github.com/VuDej/backend-rent">
@@ -30,7 +28,7 @@
 
 ## Description 🏗️
 Mayo Clinic is Ruby on Rails application, for mobile and desktop devices where patient can list all doctors, choose General Practice doctor, choose categories of doctors, make appointment and track appointments with calendar.
-Admin can manage doctors and patients.
+Admin can manage doctors and patients, send recommendation and tests. (On demand doctor can send reccomandation, tests and medicine)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
