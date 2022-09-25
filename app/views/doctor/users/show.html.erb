@@ -1,23 +1,17 @@
 <h6>As a doctor, you have privileges to access patients and care teams information.</h6>
 
-
-
-
 <% if @patient = @user.patient %>
     <h4>Patient Information</h4>
     
+    <b>Patient name: </b><%= @patient.fullname %><br>
     <b>Medical Records: </b><%= @patient.medical_record %><br>
     <b>Test Results: </b><%= @patient.test_results %><br>
     <b>Medications: </b><%= @patient.medications %><br>
-    <br>
-    <%= link_to "Edit Patient Information", edit_doctor_patient_path(@patient), class: "waves-effect waves-light btn" %>
+   
     
-    
+    <% elsif @doctor = @user.doctor %>
 
-<% elsif @doctor = @user.doctor %>
-
-
-    <h4>Patient Lists</h4>
+   <h4>Patient Lists</h4>
 
     <div class="row">
         <div class="col s12 cards-container">

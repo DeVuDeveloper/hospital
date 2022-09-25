@@ -72,6 +72,11 @@ $medium-only: 'only screen and (min-width : #{$small-screen-up}) and (max-width 
   column-count: $ct;
 }
 
+.raw {
+  display: flex;
+  gap: 50px;
+}
+
 .cards-container {
   column-break-inside: avoid;
   .card {
