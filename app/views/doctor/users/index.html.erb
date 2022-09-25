@@ -1,0 +1,23 @@
+<h4>Welcome, <%= current_user.fullname %></h4>
+<h6>As a doctor, you have privileges to access patients and care teams information.</h6>
+<br>
+
+<h6>List of users. Filter users type:</h6>
+
+
+
+<br>
+
+<div>
+    <% @users.each do |user| %>
+        <%= link_to "#{user.fullname}", doctor_user_path(user) %> |
+    <% end %>
+</div>
+
+<br>
+
+<script>
+    $(document).ready(function() {
+        $('select').material_select();
+    });
+</script>

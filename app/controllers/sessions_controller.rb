@@ -13,6 +13,8 @@ class SessionsController < ApplicationController
 
       if @user.admin == true
         redirect_to admin_users_path
+      elsif @user.dr == true
+        redirect_to  doctor_user_path(current_user)
       else
         current_patient
         redirect_to patient_path(current_patient)

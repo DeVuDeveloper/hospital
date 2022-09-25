@@ -7,6 +7,8 @@
 
 <% if @user.admin == true %>
     <i>You are an admin</i>
+<% elsif @user.dr == true %>
+    <i>You are a doctor</i>
 <% else %>
     <i>You are a patient</i>
 <% end %>

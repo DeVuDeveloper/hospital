@@ -11,11 +11,13 @@ class UsersController < ApplicationController
       session[:user_id] = @user.id
 
       # user as a patient
-      if @user.admin == false
+      if @user.admin == false || @user.dr == false
         redirect_to new_patient_path
       # user as an admin
-      else
+      elsif @user.admin == true
         redirect_to admin_users_path
+      elsif @user.dr == true
+        redirect_to doctor_user_path
       end
     else
       render :new
