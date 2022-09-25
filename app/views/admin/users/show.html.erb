@@ -26,10 +26,10 @@
               <%= date_time(care_team.appointment) %></p>
           </div>
           <div class="card-action" align="center">
-            <%= link_to "Edit Care Team", edit_admin_healthcare_team_path(care_team), class: "waves-effect waves-light btn" %>
+            <%= link_to "Edit Doctor's examination", edit_admin_healthcare_team_path(care_team), class: "waves-effect waves-light btn" %>
             <br>
             <br>
-            <%= button_to "Delete Care Team", [:admin, care_team], method: :delete, data: {confirm: "Are you sure?"}, params: { 'user_id' => @patient.user }, class: "waves-effect waves-light btn" %>
+            <%= button_to "Delete Doctor's examination", [:admin, care_team], method: :delete, data: {confirm: "Are you sure?"}, params: { 'user_id' => @patient.user }, class: "waves-effect waves-light btn" %>
           </div>
         </div>
       <% end %>
@@ -59,7 +59,7 @@
             <%= link_to "Edit Patient Medical Chart", edit_admin_healthcare_team_path(care_team), class: "waves-effect waves-light btn" %>
             <br>
             <br>
-            <%= button_to "Delete Care Team", [:admin, care_team], method: :delete, data: {confirm: "Are you sure?"}, params: { 'user_id' => @doctor.user }, class: "waves-effect waves-light btn" %>
+            <%= button_to "Delete Doctor's examination", [:admin, care_team], method: :delete, data: {confirm: "Are you sure?"}, params: { 'user_id' => @doctor.user }, class: "waves-effect waves-light btn" %>
           </div>
         </div>
       <% end %>
