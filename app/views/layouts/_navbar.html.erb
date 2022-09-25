@@ -6,7 +6,7 @@
         <ul id="nav-mobile" class="right hide-on-med-and-down">
             <% if logged_in? && current_patient %>
                 <li><%= link_to "Home", patient_path(current_patient), class: "waves-effect waves-teal btn-flat white-text" %></li>
-                <li><%= link_to "Doctor's examination", patient_healthcare_teams_path, class: "waves-effect waves-teal btn-flat white-text" %></li>
+                <li><%= link_to "Doctor's examination", patient_healthcare_teams_path(current_patient, current_patient.healthcare_teams), class: "waves-effect waves-teal btn-flat white-text" %></li>
                 <li><%= link_to "Doctors", doctors_path, class: "waves-effect waves-teal btn-flat white-text" %></li>
                 <li><%= link_to "Profile", user_path(session[:user_id]), class: "waves-effect waves-teal btn-flat white-text" %></li>
                 <li><%= button_to "Log Out", logout_path, method: "delete", class: "waves-effect waves-teal btn-flat white-text" %></li>
