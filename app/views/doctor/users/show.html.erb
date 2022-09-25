@@ -1,0 +1,33 @@
+<h6>As a doctor, you have privileges to access patients and care teams information.</h6>
+
+<% if @patient = @user.patient %>
+    <h4>Patient Information</h4>
+    
+    <b>Patient name: </b><%= @patient.fullname %><br>
+    <b>Medical Records: </b><%= @patient.medical_record %><br>
+    <b>Test Results: </b><%= @patient.test_results %><br>
+    <b>Medications: </b><%= @patient.medications %><br>
+   
+    
+    <% elsif @doctor = @user.doctor %>
+
+   <h4>Patient Lists</h4>
+
+    <div class="row">
+        <div class="col s12 cards-container">
+            <% @doctor.healthcare_teams.each do |care_team| %>
+                <div class="card blue lighten-5">
+                    <div class="card-content black-text">
+                        <span class="card-title"><%= care_team.patient.fullname %></span>
+                        <p><%= date_time(care_team.appointment) %></p>
+                    </div>
+                    <div class="card-action" align="center">
+                        <%= link_to "Doctor's examination", edit_doctor_healthcare_team_path(care_team), class: "waves-effect waves-light btn" %>
+                        <br><br>
+                        <%= button_to "Delete Appointment", [:doctor, care_team], method: :delete, data: {confirm: "Are you sure?"}, params: { 'user_id' => @doctor.user }, class: "waves-effect waves-light btn" %>
+                    </div>
+                </div>
+            <% end %>
+        </div>
+    </div>
+<% end %>

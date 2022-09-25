@@ -30,4 +30,10 @@ Rails.application.routes.draw do  # For details on the DSL available within this
     resources :doctors, only: %i[edit update]
     resources :healthcare_teams, only: %i[edit update destroy]
   end
+  
+  namespace :doctor do
+    resources :users, only: %i[index show edit update destroy]
+    resources :patients, only: %i[edit update]
+    resources :healthcare_teams, only: %i[edit update destroy]
+  end
 end
