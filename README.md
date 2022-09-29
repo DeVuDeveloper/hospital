@@ -66,7 +66,7 @@ You will be needing:
 - The postgres installation doesn't setup a user for you, so you'll need to follow these steps to create a user with permission to create databases. You can skip this if this is not your first time using PostgreSQL
 
   ```bash
-  sudo -u postgres createuser <Username> -s
+  sudo -u postgres createuser <Username>
   ```
 
 ### Clone this repository
