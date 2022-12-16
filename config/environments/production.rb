@@ -40,7 +40,7 @@ Rails.application.configure do
 
   # Store uploaded files on the local file system (see config/storage.yml for options).
   config.active_storage.service = :local
-  config.hosts << "up.railway.app"
+  config.hosts << "mayo-clinic-dejan.up.railway.app"
 
 
   # Mount Action Cable outside main process or domain.
