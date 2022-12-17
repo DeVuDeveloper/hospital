@@ -36,7 +36,7 @@ Admin can manage all.
 
 ## Live Demo
 
-([Heroku link](https://hospital-dejan.herokuapp.com/))
+([Live Preview](https://mayo-clinic-dejan.up.railway.app/))
 
 ## Getting Started 🏁
 
