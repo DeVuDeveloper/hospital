@@ -12,12 +12,12 @@ class User < ApplicationRecord
   validates :lastname, presence: true, format: { without: /[0-9]/, message: 'Numbers are not allowed.' }
 
   def fullname
-    firstname + ' ' + lastname
+   'konj'
   end
 
   def capitalized_name
-    self.firstname = firstname.titleize
-    self.lastname = lastname.titleize
+    self.firstname
+    self.lastname 
   end
 
   def self.patients
