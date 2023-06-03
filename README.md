@@ -27,10 +27,7 @@
 ![Screenshot](app/assets/images/screenshot2.jpg)
 
 ## Description 🏗️
-Mayo Clinic is Ruby on Rails application, for mobile and desktop devices. There are 3 different users with different priviligies.
-Patient can list all doctors, choose General Practice doctor, choose categories of doctors, make appointment and track appointments with calendar.
-Doctor can list patient who created appointment, get patient's info and after exames send recommendations.
-Admin can manage all.
+Mayo Clinic is a Ruby on Rails application, for mobile and desktop devices. There are 3 different users with different privileges. Patients can list all doctors, choose General Practice doctors, choose categories of doctors, make appointments, and track appointments with a calendar. Doctors can list patients who created appointments, get patients' info, and after exames send recommendations. Admin can manage all.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
